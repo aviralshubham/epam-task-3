@@ -1,0 +1,70 @@
+
+<%- include ('include/_header') %>
+
+<!-- /include header -->
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/user_info"><i class="fas fa-angle-double-left"></i> Back</a>
+            </div>
+          
+         </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update UserData</h2>
+          
+        </div>
+
+            <form method="POST" id="update_userdeta">
+                <div class="new_user">
+                    <div class="form-group">
+                        <label for="fname" class="text-light">First Name</label>
+                        <input type="hidden" name="id" value="<%= user1._id %>">
+                        <input type="text" name="fname" value="<%= user1.fname%>" placeholder="Shubham">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname" class="text-light">Last Name</label>
+                        <input type="text" name="lname" value="<%= user1.lname %>" placeholder="Bisht">
+                        <label for="username" class="text-light">UserName</label>
+                        <input type="hidden" name="id" value="">
+                        <input type="text" name="username" value="<%= user1.username %>"  placeholder="Shubham">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="text-light">Email</label>
+                        <input type="email" name="email" value="<%= user1.email %>"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="xyz@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Mobile" class="text-light">Mobile Number</label>
+                        <input type="tel" name="tel" value="<%= user1.tel %>"   required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="text-light">Password</label> 
+                        <input type="password" id="pwd" name="password" pattern=".{8,}"  placeholder="********" title="Eight or more characters" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="text-light">Location</label>
+                        <input type="text" name="location" value="<%= user1.location %>" placeholder="Delhi">
+
+                        
+                    </div>
+            
+                   
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Save</button>
+                    </div>
+                    
+                </div>
+            </form>
+        
+    </div>
+</main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>

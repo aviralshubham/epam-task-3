@@ -1,0 +1,82 @@
+<!-- include header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book System</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/st1.css">
+    
+</head>
+<body>
+    
+    <!-- Header -->
+        <header id="header">
+            <nav>
+                <div class="container">
+                    <div class="text-center">
+                        <img src="img/epam.png" id="logo"  alt="logo" class="responsive">
+                    </div>
+                </div>
+            </nav>
+        </header>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  
+  <!-- /login-section -->
+	<section class="w3l-login-6">
+		<div class="login-hny">
+			<div class="form-content">
+				<div class="form-right">
+					<div class="overlay">
+						<div class="grid-info-form">
+							<h5>All In One</h5>
+							<h3>Library System </h3>
+							
+							<a href="/" class="read-more-1 btn">Get Books</a>
+						</div>
+					
+					</div>
+				</div>
+				<div class="form-left">
+					<div class="middle">
+						<h4>Login Form</h4>
+						<p>Hi! Please Login To Continue</p>
+					</div>
+					<form action="/login" method="POST" id ="signin" class="signin-form">
+							<div class="form-input">
+								<label>UserName</label>
+								<input type="text" name="email" placeholder="" required />
+							</div>
+							
+							<div class="form-input">
+								<label>Password</label>
+								<input type="password" name="password" placeholder="" required />
+							</div>
+							
+							
+							<button type="submit" class="btn btn-primary submit">Login</button>
+                            <center>Or</center>
+                            
+					</form>
+                          <a href="/register" > <button class="btn">Register</button> </a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- //login-section -->
+
+
+
+
+  <!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
